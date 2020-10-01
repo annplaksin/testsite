@@ -4,15 +4,16 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="container grid-xl content">
+    <div class="container">
+        {% include header.html %}
+        <div class="sidebar1">
+          <!-- sidebar left -->
+        </div>
         {{ content }}
+        <div class="sidebar2">
+          <!-- sidebar right -->
+        </div>
+        {% include footer.html %}
     </div>
-
-    {% include footer.html %}
-
   </body>
-
 </html>
